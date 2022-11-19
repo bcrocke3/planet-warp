@@ -9,7 +9,7 @@ public class RockSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      for (int i = 0; i < 100; i++)
+      for (int i = 0; i < 50; i++)
       {
         for (int j = 0; j < rocks.Length; j++)
         {
@@ -19,7 +19,6 @@ public class RockSpawner : MonoBehaviour
             Instantiate(newRock, randomSpawnPosition, Quaternion.identity);
         }
       }
-
     }
 
     // Update is called once per frame
