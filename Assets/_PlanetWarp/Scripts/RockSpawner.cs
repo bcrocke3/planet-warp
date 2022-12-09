@@ -39,9 +39,11 @@ public class RockSpawner : MonoBehaviour
     void Update()
     {
         //on interaction with a rockObject
-        //Start screen: Let's explore Mars! Try to find the special elements that make up Mars' surface. 
+        //Start screen: Let's explore Mars! Try to find the special elements that make up Mars' surface.
         //show screen of "Congrats! You found Element #x: Mineral Name! This makes up x% of Mars' surface.
         //Close Button
+        //Make that element dissapear
+
 
         //Number on top right that shows how many minerals you found
     }
