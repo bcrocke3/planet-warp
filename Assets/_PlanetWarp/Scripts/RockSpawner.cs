@@ -25,26 +25,22 @@ public class RockSpawner : MonoBehaviour
       }
 
       // spawn rocks that are part of the game
+      int x = 440;
+      int z = -440;
       for (int j = 0; j < rockNames.Length; j++)
       {
             //Vector3 randomSpawnPosition = new Vector3(Random.Range(200, 800), 75, Random.Range(-800, -200));
-            Vector3 randomSpawnPosition = new Vector3(440, 100, -440);
+            Vector3 randomSpawnPosition = new Vector3(x, 100, z);
             GameObject newRock = rockObjects[j];
             rockObjects[j] = Instantiate(newRock, randomSpawnPosition, Quaternion.identity);
             rockObjects[j].name = rockNames[j];
+            x = x+30;
+            z = z+20;
       }
     }
 
     // Update is called once per frame
     void Update()
     {
-        //on interaction with a rockObject
-        //Start screen: Let's explore Mars! Try to find the special elements that make up Mars' surface.
-        //show screen of "Congrats! You found Element #x: Mineral Name! This makes up x% of Mars' surface.
-        //Close Button
-        //Make that element dissapear
-
-
-        //Number on top right that shows how many minerals you found
     }
 }
